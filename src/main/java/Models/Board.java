@@ -75,11 +75,9 @@ public class Board {
         ArrayList<Integer> piecesOrder=boardConfiguration.getPieceNumbers();
         for (int i = 0; i <8 ; i++) {
             if (piecesOrder.get(i) != (i + 1)) {
-                System.out.println(piecesOrder.toString()+" "+i);
                 return false;
             }
         }
-        System.out.println(piecesOrder.toString());
         return true;
     }
 
